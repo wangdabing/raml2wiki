@@ -25,7 +25,7 @@ h3. {{{title}}}
 ----
 
 {{#resources}}
-h2. {{#if displayName}}{{displayName}}{{/if}}{{#unless displayName}}{{wikisafe relativeUri}}{{/unless}}
+h2. {{#if displayName}}{{{wikisafe displayName}}}{{/if}}{{#unless displayName}}{{{wikisafe relativeUri}}}{{/unless}}
 
 {{#if description}}
 Description: {{description}}
