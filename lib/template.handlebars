@@ -1,0 +1,50 @@
+h1. {{{title}}} {{#if version}} version {{version}}{{/if}}
+
+{toc:printable=true|style=square|minLevel=2|maxLevel=2|type=list|outline=false|include=.*}
+
+
+h2. Base URI: {{{wikisafe baseUri}}}
+
+{{#if baseUriParameters}}
+h3. Base URI Parameters
+
+|| Param Name    || Type          || Required         ||Example        || Default       || Description   ||
+{{#each baseUriParameters}}
+|{{{@key}}}      |{{{Type}}}      |{{{emote required}}}    |{{{example}}}    |{{{default}}}    |{{{description}}}|
+{{/each}}
+
+{{/if}}
+
+
+{{#documentation}}
+h3. {{{title}}}
+{{{content}}}
+{{/documentation}}
+
+\\
+----
+
+{{#resources}}
+h2. {{#if displayName}}{{displayName}}{{/if}}{{#unless displayName}}{{wikisafe relativeUri}}{{/unless}}
+
+{{#if description}}
+Description: {{description}}
+{{/if}}
+
+{{#if uriParameters}}
+h3. URI Parameters
+
+|| Param Name    || Type          || Required       || Example       || Default       || Description   ||
+{{#each uriParameters}}
+|{{{@key}}}      |{{{Type}}}       |{{{emote required}}}   |{{{example}}}   |{{{default}}}    |{{{description}}}|
+{{/each}}
+
+{{/if}}
+
+
+
+
+{{> resource}}
+{{/resources}}
+
+
