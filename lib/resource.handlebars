@@ -1,13 +1,13 @@
 h3. {{wikisafe parentUrl}}{{wikisafe relativeUri}}
 {{#methods}}
-{{method}}: {{description}}
+h4.  {{method}} {{#if description}} : {{description}}{{/if}}
 
 {{#if queryParameters}}
-h4. Query Parameters
+h5. Query Parameters
 
-|| Param Name    || Type          || Required       ||Example        || Default       || Description   ||
+|| Param Name || Type || Required || Example || Default || Description ||
 {{#each queryParameters}}
-|{{{@key}}}       |{{{Type}}}     |{{{emote required}}}   |{{{example}}}    |{{{default}}}    |{{{description}}}|
+| {{{@key}}} |{{{Type}}} | {{{emote required}}} | {{{example}}} | {{{default}}} | {{{description}}} |
 {{/each}}
 
 {{/if}}
@@ -18,9 +18,10 @@ h4. Query Parameters
 
 {{#if responses}}
 
+h5. Responses
 
    {{#each responses}}
-     h3. {{@key}} - {{this.description}}
+     h6. {{@key}} {{#if this.description}} - {{this.description}}{{/if}}
 
          {{#if this.headers}}
                                                
@@ -62,8 +63,7 @@ h4. Query Parameters
 
 {{/methods}}
 
-\\
-----
+
 
 {{#resources}}
 {{> resource}}
