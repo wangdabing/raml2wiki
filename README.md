@@ -34,8 +34,16 @@ Using your own templates:
 raml2txt -t custom-template.handlebars -r custom-resource.handlebars -m custom-item.handlebars -i example.raml -o example.txt
 ```
 
+## Example Output
+
+### Start of Wiki Page
+![Start of Wiki Page](https://raw.github.com/jhitchcock/raml2wiki/master/wikiExample1.png)
+
+### Example Endpoint Section
+![Example Endpoint](https://raw.github.com/jhitchcock/raml2wiki/master/wikiExample2.png)
 
 
-
-This is based on the RAML to md generator by Kevin Renskers here: (https://github.com/kevinrenskers/raml2md) 
+This script uses the parsing method and raml2obj script by Kevin Renskers 
+(https://github.com/kevinrenskers/raml2obj)
+(https://github.com/kevinrenskers/raml2md)
 
