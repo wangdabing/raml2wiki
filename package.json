@@ -1,10 +1,10 @@
 {
   "name": "raml2wiki",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "RAML to Wiki format documentation generator",
   "main": "lib/raml2wiki.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha -R nyan"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/jhitchcock/raml2wiki/issues"
   },
-  "homepage": "https://github.com/jhitchcock/raml2wiki"
+  "homepage": "https://github.com/jhitchcock/raml2wiki",
+  "devDependencies": {
+    "chai": "^1.9.2",
+    "mocha": "^2.0.1"
+  }
 }
