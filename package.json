@@ -6,6 +6,9 @@
   "scripts": {
     "test": "mocha -R nyan"
   },
+  "bin": {
+    "raml2wiki": "lib/raml2wiki.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/jhitchcock/raml2wiki.git"
@@ -22,5 +25,10 @@
   "devDependencies": {
     "chai": "^1.9.2",
     "mocha": "^2.0.1"
+  },
+  "dependencies": {
+    "commander": "^2.5.0",
+    "handlebars": "^2.0.0",
+    "raml2obj": "^0.3.0"
   }
 }
