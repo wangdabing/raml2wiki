@@ -2,6 +2,19 @@ h3. {{wikisafe parentUrl}}{{wikisafe relativeUri}}
 {{#methods}}
 h4.  {{method}} {{#if description}} : {{description}}{{/if}}
 
+
+
+{{#if headers}}
+h5. Request Headers
+
+|| Param Name || Type || Required || Example || Description ||
+{{#each headers}}
+| {{{@key}}} |{{{Type}}} | {{{emote required}}} | {{{example}}} | {{{description}}} |
+{{/each}}
+
+{{/if}}
+
+
 {{#if queryParameters}}
 h5. Query Parameters
 
@@ -12,9 +25,25 @@ h5. Query Parameters
 
 {{/if}}
 
+{{#if body}}
 
+h5. Body
 
+{{#each body}}
 
+h6. {{@key}}
+
+{{#if formParameters}}
+h6. Form Parameters
+
+|| Param Name || Type || Required || Example || Default || Description ||
+{{#each formParameters}}
+| {{{@key}}} |{{{Type}}} | {{{emote required}}} | {{{example}}} | {{{default}}} | {{{description}}} |
+{{/each}}
+
+{{/if}}
+{{/each}}
+{{/if}}
 
 {{#if responses}}
 
@@ -34,6 +63,8 @@ h5. Responses
          {{#if this.body}}
               {{#each this.body}}
                    Type: {{@key}}
+
+
 
               {{#if this.schema}}
              	{code:title=Schema {{@key}} |collapse=true }
