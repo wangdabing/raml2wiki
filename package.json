@@ -1,6 +1,6 @@
 {
   "name": "raml2wiki",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "RAML to Wiki format documentation generator",
   "main": "lib/raml2wiki.js",
   "scripts": {
