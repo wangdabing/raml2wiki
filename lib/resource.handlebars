@@ -42,6 +42,22 @@ h6. Form Parameters
 {{/each}}
 
 {{/if}}
+
+{{#if this.schema}}
+  {code:title=Schema {{@key}} |collapse=true }
+{{{this.schema}}}
+{code}
+
+{{/if}}
+
+{{#if this.example}}
+  {code:title=Example {{@key}} |collapse=true }
+{{{this.example}}}
+{code}
+
+
+{{/if}}
+
 {{/each}}
 {{/if}}
 
