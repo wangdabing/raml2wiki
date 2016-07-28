@@ -28,11 +28,6 @@ raml2wiki -i example.raml -o example.txt
 raml2wiki -s -i example.raml -o example.txt
 ```
 
-Using your own templates:
-
-```
-raml2txt -t custom-template.handlebars -r custom-resource.handlebars -m custom-item.handlebars -i example.raml -o example.txt
-```
 
 ## Example Output
 
