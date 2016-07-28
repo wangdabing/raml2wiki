@@ -29,6 +29,7 @@
   "dependencies": {
     "commander": "^2.5.0",
     "handlebars": "^2.0.0",
-    "raml2obj": "^0.3.0"
+    "raml2obj": "2.2.x",
+    "raml-jsonschema-expander": "1.1.x"
   }
 }
