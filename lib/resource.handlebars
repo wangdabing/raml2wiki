@@ -2,14 +2,22 @@ h3. {{wikisafe parentUrl}}{{wikisafe relativeUri}}
 {{#methods}}
 h4.  {{upcase method}} {{#if description}} : {{description}}{{/if}}
 
-
+{{#if securedBy}}
+Secured By: {{securedBy}}
+{{/if}}
 
 {{#if headers}}
 h5. Request Headers
 
 || Param Name || Type || Required || Example || Description ||
 {{#each headers}}
-| {{{@key}}} | {{{type}}} | {{{emote required}}} | {{{example}}} | {{{description}}} |
+| {{{@key}}} | 
+	    {{~#if enum~}}
+                one of: {{enum}}
+            {{~else~}}
+                {{type}}
+            {{~/if~}}
+ | {{{emote required}}} | {{{example}}} | {{{description}}} |
 {{/each}}
 
 {{/if}}
@@ -20,7 +28,13 @@ h5. Query Parameters
 
 || Param Name || Type || Required || Example || Default || Description ||
 {{#each queryParameters}}
-| {{{@key}}} | {{{type}}} | {{{emote required}}} | {{{example}}} | {{{default}}} | {{{description}}} |
+| {{{@key}}} | 
+{{~#if enum~}}
+                one of: {{enum}}
+            {{~else~}}
+                {{type}}
+            {{~/if~}}
+ | {{{emote required}}} | {{{example}}} | {{{default}}} | {{{description}}} |
 {{/each}}
 
 {{/if}}
@@ -38,7 +52,13 @@ h6. Form Parameters
 
 || Param Name || Type || Required || Example || Default || Description ||
 {{#each formParameters}}
-| {{{@key}}} | {{{type}}} | {{{emote required}}} | {{{example}}} | {{{default}}} | {{{description}}} |
+| {{{@key}}} | 
+{{~#if enum~}}
+                one of: {{enum}}
+            {{~else~}}
+                {{type}}
+            {{~/if~}}
+ | {{{emote required}}} | {{{example}}} | {{{default}}} | {{{description}}} |
 {{/each}}
 
 {{/if}}
@@ -70,9 +90,18 @@ h5. Responses
 
          {{#if this.headers}}
                                                
-               {{#each this.headers}}
-                    headers
-               {{/each}}
+              || Name || Type || Example || Description ||
+		{{#each this.headers}}
+		| {{{@key}}} |
+
+ {{~#if enum~}}
+                one of: {{enum}}
+            {{~else~}}
+                {{type}}
+            {{~/if~}}
+
+ | {{{example}}} | {{{description}}} |
+		{{/each}}
                                              
          {{/if}}
 
