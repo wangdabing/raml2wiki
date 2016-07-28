@@ -2,7 +2,7 @@
 ---
 title: GitHub API
 version: v3
-baseUri: https://api.github.com
+baseUri: https://api.github.com/
 securitySchemes:
   - oauth_2_0:
       description: |
@@ -916,94 +916,94 @@ traits:
                 "$schema": "http://json-schema.org/draft-03/schema",
                 "type": "object",
                 "properties": {
-                  "timeline_url": {
-                    "type": "string"
-                  },
-                  "user_url": {
-                    "type": "string"
-                  },
-                  "current_user_public": {
-                    "type": "string"
-                  },
-                  "current_user_url": {
-                    "type": "string"
-                  },
-                  "current_user_actor_url": {
-                    "type": "string"
-                  },
-                  "current_user_organization_url": {
-                    "type": "string"
-                  },
-                  "_links": {
-                    "properties": {
-                      "timeline": {
-                        "properties": {
-                          "href": {
-                            "type": "string"
-                          },
-                          "type": {
-                            "type": "string"
-                          }
-                        },
-                        "type": "object"
-                      },
-                      "user": {
-                        "properties": {
-                          "href": {
-                            "type": "string"
-                          },
-                          "type": {
-                            "type": "string"
-                          }
-                        },
-                        "type": "object"
-                      },
-                      "current_user_public": {
-                        "properties": {
-                          "href": {
-                            "type": "string"
-                          },
-                          "type": {
-                            "type": "string"
-                          }
-                        },
-                        "type": "object"
-                      },
-                      "current_user": {
-                        "properties": {
-                          "href": {
-                            "type": "string"
-                          },
-                          "type": {
-                            "type": "string"
-                          }
-                        },
-                        "type": "object"
-                      },
-                      "current_user_actor": {
-                        "properties": {
-                          "href": {
-                            "type": "string"
-                          },
-                          "type": {
-                            "type": "string"
-                          }
-                        },
-                        "type": "object"
-                      },
-                      "current_user_organization": {
-                        "properties": {
-                          "href": {
-                            "type": "string"
-                          },
-                          "type": {
-                            "type": "string"
-                          }
-                        },
-                        "type": "object"
-                      }
-                    }
-                  }
+                	"timeline_url": {
+                		"type": "string"
+                	},
+                	"user_url": {
+                		"type": "string"
+                	},
+                	"current_user_public": {
+                		"type": "string"
+                	},
+                	"current_user_url": {
+                		"type": "string"
+                	},
+                	"current_user_actor_url": {
+                		"type": "string"
+                	},
+                	"current_user_organization_url": {
+                		"type": "string"
+                	},
+                	"_links": {
+                		"properties": {
+                			"timeline": {
+                				"properties": {
+                					"href": {
+                						"type": "string"
+                					},
+                					"type": {
+                						"type": "string"
+                					}
+                				},
+                				"type": "object"
+                			},
+                			"user": {
+                				"properties": {
+                					"href": {
+                						"type": "string"
+                					},
+                					"type": {
+                						"type": "string"
+                					}
+                				},
+                				"type": "object"
+                			},
+                			"current_user_public": {
+                				"properties": {
+                					"href": {
+                						"type": "string"
+                					},
+                					"type": {
+                						"type": "string"
+                					}
+                				},
+                				"type": "object"
+                			},
+                			"current_user": {
+                				"properties": {
+                					"href": {
+                						"type": "string"
+                					},
+                					"type": {
+                						"type": "string"
+                					}
+                				},
+                				"type": "object"
+                			},
+                			"current_user_actor": {
+                				"properties": {
+                					"href": {
+                						"type": "string"
+                					},
+                					"type": {
+                						"type": "string"
+                					}
+                				},
+                				"type": "object"
+                			},
+                			"current_user_organization": {
+                				"properties": {
+                					"href": {
+                						"type": "string"
+                					},
+                					"type": {
+                						"type": "string"
+                					}
+                				},
+                				"type": "object"
+                			}
+                		}
+                	}
                 }
             }
           example: |
@@ -1090,23 +1090,23 @@ traits:
         body:
           schema: |
             {
-              "$schema": "http://json-schema.org/draft-03/schema",
-              "type": "object",
-              "properties": {
-                "rate": {
-                  "properties": {
-                    "limit": {
-                      "type": "integer"
-                    },
-                      "remaining": {
-                        "type": "integer"
-                      },
-                      "reset": {
-                        "type": "integer"
-                      }
-                  }
-                }
-              }
+            	"$schema": "http://json-schema.org/draft-03/schema",
+            	"type": "object",
+            	"properties": {
+            		"rate": {
+            			"properties": {
+            				"limit": {
+            					"type": "integer"
+            				},
+            			    "remaining": {
+            			    	"type": "integer"
+            			    },
+            			    "reset": {
+            			    	"type": "integer"
+            			    }
+            			}
+            		}
+            	}
             }
           example: |
             {
@@ -1392,95 +1392,95 @@ traits:
                 "$schema": "http://json-schema.org/draft-03/schema",
                 "type": "array",
                 "properties": [
-                  {
-                    "properties": {
-                      "id": {
-                        "type": "integer"
-                      },
-                      "repository": {
-                        "properties": {
-                          "id": {
-                            "type": "integer"
-                          },
-                          "owner": {
-                            "properties": {
-                              "login": {
-                                "type": "string"
-                              },
-                              "id": {
-                                "type": "integer"
-                              },
-                              "avatar_url": {
-                                "type": "string"
-                              },
-                              "gravatar_id": {
-                                "type": "string"
-                              },
-                              "url": {
-                                "type": "string"
-                              }
-                            },
-                            "type": "object"
-                          },
-                          "name": {
-                            "type": "string"
-                          },
-                          "full_name": {
-                            "type": "string"
-                          },
-                          "description": {
-                            "type": "string"
-                          },
-                          "private": {
-                            "type": "boolean"
-                          },
-                          "fork": {
-                            "type": "boolean"
-                          },
-                          "url": {
-                            "type": "string"
-                          },
-                          "html_url": {
-                            "type": "string"
-                          }
-                        },
-                        "type": "object"
-                      },
-                      "subject": {
-                        "properties": {
-                          "title": {
-                            "type": "string"
-                          },
-                          "url": {
-                            "type": "string"
-                          },
-                          "latest_comment_url": {
-                            "type": "string"
-                          },
-                          "type": {
-                            "type": "string"
-                          }
-                        },
-                        "type": "object"
-                      },
-                      "reason": {
-                        "type": "string"
-                      },
-                      "unread": {
-                        "type": "boolean"
-                      },
-                      "updated_at": {
-                        "type": "string"
-                      },
-                      "last_read_at": {
-                        "type": "string"
-                      },
-                      "url": {
-                        "type": "string"
-                      }
-                    },
-                    "type": "object"
-                  }
+                	{
+                		"properties": {
+                			"id": {
+                				"type": "integer"
+                			},
+                			"repository": {
+                				"properties": {
+                					"id": {
+                						"type": "integer"
+                					},
+                					"owner": {
+                						"properties": {
+                							"login": {
+                								"type": "string"
+                							},
+                							"id": {
+                								"type": "integer"
+                							},
+                							"avatar_url": {
+                								"type": "string"
+                							},
+                							"gravatar_id": {
+                								"type": "string"
+                							},
+                							"url": {
+                								"type": "string"
+                							}
+                						},
+                						"type": "object"
+                					},
+                					"name": {
+                						"type": "string"
+                					},
+                					"full_name": {
+                						"type": "string"
+                					},
+                					"description": {
+                						"type": "string"
+                					},
+                					"private": {
+                						"type": "boolean"
+                					},
+                					"fork": {
+                						"type": "boolean"
+                					},
+                					"url": {
+                						"type": "string"
+                					},
+                					"html_url": {
+                						"type": "string"
+                					}
+                				},
+                				"type": "object"
+                			},
+                			"subject": {
+                				"properties": {
+                					"title": {
+                						"type": "string"
+                					},
+                					"url": {
+                						"type": "string"
+                					},
+                					"latest_comment_url": {
+                						"type": "string"
+                					},
+                					"type": {
+                						"type": "string"
+                					}
+                				},
+                				"type": "object"
+                			},
+                			"reason": {
+                				"type": "string"
+                			},
+                			"unread": {
+                				"type": "boolean"
+                			},
+                			"updated_at": {
+                				"type": "string"
+                			},
+                			"last_read_at": {
+                				"type": "string"
+                			},
+                			"url": {
+                				"type": "string"
+                			}
+                		},
+                		"type": "object"
+                	}
                 ]
             }
           example: |
@@ -1528,10 +1528,10 @@ traits:
               "$schema": "http://json-schema.org/draft-03/schema",
               "type": "object",
               "properties": {
-                "last_read_at": {
-                  "description": "Describes the last point that notifications were checked. Anything updated since this time will not be updated. Default: Now.",
-                  "type": "string"
-                }
+              	"last_read_at": {
+              		"description": "Describes the last point that notifications were checked. Anything updated since this time will not be updated. Default: Now.",
+              		"type": "string"
+              	}
               }
           }
     responses:
@@ -1553,95 +1553,95 @@ traits:
                   "$schema": "http://json-schema.org/draft-03/schema",
                   "type": "array",
                   "properties": [
-                    {
-                      "properties": {
-                        "id": {
-                          "type": "integer"
-                        },
-                        "repository": {
-                          "properties": {
-                            "id": {
-                              "type": "integer"
-                            },
-                            "owner": {
-                              "properties": {
-                                "login": {
-                                  "type": "string"
-                                },
-                                "id": {
-                                  "type": "integer"
-                                },
-                                "avatar_url": {
-                                  "type": "string"
-                                },
-                                "gravatar_id": {
-                                  "type": "string"
-                                },
-                                "url": {
-                                  "type": "string"
-                                }
-                              },
-                              "type": "object"
-                            },
-                            "name": {
-                              "type": "string"
-                            },
-                            "full_name": {
-                              "type": "string"
-                            },
-                            "description": {
-                              "type": "string"
-                            },
-                            "private": {
-                              "type": "boolean"
-                            },
-                            "fork": {
-                              "type": "boolean"
-                            },
-                            "url": {
-                              "type": "string"
-                            },
-                            "html_url": {
-                              "type": "string"
-                            }
-                          },
-                          "type": "object"
-                        },
-                        "subject": {
-                          "properties": {
-                            "title": {
-                              "type": "string"
-                            },
-                            "url": {
-                              "type": "string"
-                            },
-                            "latest_comment_url": {
-                              "type": "string"
-                            },
-                            "type": {
-                              "type": "string"
-                            }
-                          },
-                          "type": "object"
-                        },
-                        "reason": {
-                          "type": "string"
-                        },
-                        "unread": {
-                          "type": "boolean"
-                        },
-                        "updated_at": {
-                          "type": "string"
-                        },
-                        "last_read_at": {
-                          "type": "string"
-                        },
-                        "url": {
-                          "type": "string"
-                        }
-                      },
-                      "type": "object"
-                    }
+                  	{
+                  		"properties": {
+                  			"id": {
+                  				"type": "integer"
+                  			},
+                  			"repository": {
+                  				"properties": {
+                  					"id": {
+                  						"type": "integer"
+                  					},
+                  					"owner": {
+                  						"properties": {
+                  							"login": {
+                  								"type": "string"
+                  							},
+                  							"id": {
+                  								"type": "integer"
+                  							},
+                  							"avatar_url": {
+                  								"type": "string"
+                  							},
+                  							"gravatar_id": {
+                  								"type": "string"
+                  							},
+                  							"url": {
+                  								"type": "string"
+                  							}
+                  						},
+                  						"type": "object"
+                  					},
+                  					"name": {
+                  						"type": "string"
+                  					},
+                  					"full_name": {
+                  						"type": "string"
+                  					},
+                  					"description": {
+                  						"type": "string"
+                  					},
+                  					"private": {
+                  						"type": "boolean"
+                  					},
+                  					"fork": {
+                  						"type": "boolean"
+                  					},
+                  					"url": {
+                  						"type": "string"
+                  					},
+                  					"html_url": {
+                  						"type": "string"
+                  					}
+                  				},
+                  				"type": "object"
+                  			},
+                  			"subject": {
+                  				"properties": {
+                  					"title": {
+                  						"type": "string"
+                  					},
+                  					"url": {
+                  						"type": "string"
+                  					},
+                  					"latest_comment_url": {
+                  						"type": "string"
+                  					},
+                  					"type": {
+                  						"type": "string"
+                  					}
+                  				},
+                  				"type": "object"
+                  			},
+                  			"reason": {
+                  				"type": "string"
+                  			},
+                  			"unread": {
+                  				"type": "boolean"
+                  			},
+                  			"updated_at": {
+                  				"type": "string"
+                  			},
+                  			"last_read_at": {
+                  				"type": "string"
+                  			},
+                  			"url": {
+                  				"type": "string"
+                  			}
+                  		},
+                  		"type": "object"
+                  	}
                   ]
               }
             example: |
@@ -1694,24 +1694,24 @@ traits:
                     "$schema": "http://json-schema.org/draft-03/schema",
                     "type": "object",
                     "properties": {
-                      "subscribed":{
-                        "type": "boolean"
-                      },
-                    "ignored": {
-                      "type": "boolean"
-                    },
-                    "reason": {
-                      "type": "boolean"
-                    },
-                    "created_at": {
-                      "type": "string"
-                    },
-                    "url": {
-                      "type": "string"
-                    },
-                    "thread_url": {
-                      "type": "string"
-                    }
+                    	"subscribed":{
+                    		"type": "boolean"
+                    	},
+                		"ignored": {
+                			"type": "boolean"
+                		},
+                		"reason": {
+                			"type": "boolean"
+                		},
+                		"created_at": {
+                			"type": "string"
+                		},
+                		"url": {
+                			"type": "string"
+                		},
+                		"thread_url": {
+                			"type": "string"
+                		}
                     }
                 }
               example: |
@@ -1736,14 +1736,14 @@ traits:
                   "$schema": "http://json-schema.org/draft-03/schema",
                   "type": "object",
                   "properties": {
-                    "subscribed": {
-                      "description": "Determines if notifications should be received from this thread.",
-                      "type": "boolean"
-                    },
-                    "ignored": {
-                      "description": "Determines if all notifications should be blocked from this thread.",
-                      "type": "string"
-                    }
+                  	"subscribed": {
+                  		"description": "Determines if notifications should be received from this thread.",
+                  		"type": "boolean"
+                  	},
+                  	"ignored": {
+                  		"description": "Determines if all notifications should be blocked from this thread.",
+                  		"type": "string"
+                  	}
                   }
               }
         responses:
@@ -1754,24 +1754,24 @@ traits:
                     "$schema": "http://json-schema.org/draft-03/schema",
                     "type": "object",
                     "properties": {
-                      "subscribed":{
-                        "type": "boolean"
-                      },
-                    "ignored": {
-                      "type": "boolean"
-                    },
-                    "reason": {
-                      "type": "boolean"
-                    },
-                    "created_at": {
-                      "type": "string"
-                    },
-                    "url": {
-                      "type": "string"
-                    },
-                    "thread_url": {
-                      "type": "string"
-                    }
+                    	"subscribed":{
+                    		"type": "boolean"
+                    	},
+                		"ignored": {
+                			"type": "boolean"
+                		},
+                		"reason": {
+                			"type": "boolean"
+                		},
+                		"created_at": {
+                			"type": "string"
+                		},
+                		"url": {
+                			"type": "string"
+                		},
+                		"thread_url": {
+                			"type": "string"
+                		}
                     }
                 }
               example: |
@@ -1915,20 +1915,20 @@ traits:
               "$schema": "http://json-schema.org/draft-03/schema",
               "type": "object",
               "properties": {
-                "description": {
-                  "type": "string"
-                },
-                "public": {
-                  "type": "boolean"
-                },
-                "files": {
-                  "description": "Files that make up this gist. The key of which should be a required string filename and the value another required hash with parameter 'content'.",
-                  "type": "string"
-                },
-                "content": {
-                  "description": "File contents.",
-                  "type": "string"
-                }
+              	"description": {
+              		"type": "string"
+              	},
+              	"public": {
+              		"type": "boolean"
+              	},
+              	"files": {
+              		"description": "Files that make up this gist. The key of which should be a required string filename and the value another required hash with parameter 'content'.",
+              		"type": "string"
+              	},
+              	"content": {
+              		"description": "File contents.",
+              		"type": "string"
+              	}
               },
               "required": [ "public", "files", "content" ]
           }
@@ -3013,9 +3013,9 @@ traits:
                   "$schema": "http://json-schema.org/draft-03/schema",
                   "type": "object",
                   "properties": {
-                    "body": {
-                      "type": "string"
-                    }
+                  	"body": {
+                  		"type": "string"
+                  	}
                   },
                   "required": [ "body" ]
               }
@@ -3338,23 +3338,23 @@ traits:
               "$schema": "http://json-schema.org/draft-03/schema",
               "type": "object",
               "properties": {
-                "billing_email": {
-                  "description": "Billing email address. This address is not publicized.",
-                  "type": "string"
-                },
-                "company": {
-                  "type": "string"
-                },
-                "email": {
-                  "description": "Publicly visible email address.",
-                  "type": "string"
-                },
-                "location": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                }
+              	"billing_email": {
+              		"description": "Billing email address. This address is not publicized.",
+              		"type": "string"
+              	},
+              	"company": {
+              		"type": "string"
+              	},
+              	"email": {
+              		"description": "Publicly visible email address.",
+              		"type": "string"
+              	},
+              	"location": {
+              		"type": "string"
+              	},
+              	"name": {
+              		"type": "string"
+              	}
               }
           }
     responses:
@@ -3821,26 +3821,26 @@ traits:
                   "$schema": "http://json-schema.org/draft-03/schema",
                   "type": "object",
                   "list": [
-                    {
-                      "properties": {
-                        "login": {
-                          "type": "string"
-                        },
-                        "id": {
-                          "type": "integer"
-                        },
-                        "avatar_url": {
-                          "type": "string"
-                        },
-                        "gravatar_id": {
-                          "type": "string"
-                        },
-                        "url": {
-                          "type": "string"
-                        }
-                      },
-                      "type": "object"
-                    }
+                  	{
+                  		"properties": {
+                  			"login": {
+                  				"type": "string"
+                  			},
+              			    "id": {
+              			    	"type": "integer"
+              			    },
+              			    "avatar_url": {
+              			    	"type": "string"
+              			    },
+              			    "gravatar_id": {
+              			    	"type": "string"
+              			    },
+              			    "url": {
+              			    	"type": "string"
+              			    }
+                  		},
+                  		"type": "object"
+                  	}
                   ]
               }
             example: |
@@ -3881,26 +3881,26 @@ traits:
                   "$schema": "http://json-schema.org/draft-03/schema",
                   "type": "array",
                   "list": [
-                    {
-                      "properties": {
-                        "login": {
-                          "type": "string"
-                        },
-                        "id": {
-                          "type": "integer"
-                        },
-                        "avatar_url": {
-                          "type": "string"
-                        },
-                        "gravatar_id": {
-                          "type": "string"
-                        },
-                        "url": {
-                          "type": "string"
-                        }
-                      },
-                      "type": "object"
-                    }
+                  	{
+                  		"properties": {
+                  			"login": {
+                  				"type": "string"
+                  			},
+              			    "id": {
+              			    	"type": "integer"
+              			    },
+              			    "avatar_url": {
+              			    	"type": "string"
+              			    },
+              			    "gravatar_id": {
+              			    	"type": "string"
+              			    },
+              			    "url": {
+              			    	"type": "string"
+              			    }
+                  		},
+                  		"type": "object"
+                  	}
                   ]
               }
             example: |
@@ -3948,20 +3948,20 @@ traits:
                   "$schema": "http://json-schema.org/draft-03/schema",
                   "type": "array",
                   "list": [
-                    {
-                      "properties": {
-                        "url": {
-                          "type": "string"
-                        },
-                        "name": {
-                          "type": "string"
-                        },
-                        "id": {
-                          "type": "integer"
-                        }
-                      },
-                      "type": "object"
-                    }
+                  	{
+                  		"properties": {
+                  			"url": {
+                  				"type": "string"
+                  			},
+              			    "name": {
+              			    	"type": "string"
+              			    },
+              			    "id": {
+              			    	"type": "integer"
+              			    }
+                  		},
+                  		"type": "object"
+                  	}
                   ]
               }
             example: |
@@ -4221,43 +4221,43 @@ traits:
                 "$schema": "http://json-schema.org/draft-03/schema",
                 "type": "object",
                 "properties": {
-                  "name": {
-                    "type": "string"
-                  },
-                  "description": {
-                    "type": "string"
-                  },
-                  "homepage": {
-                    "type": "string"
-                  },
-                  "private": {
-                    "description": "True to create a private repository, false to create a public one. Creating private repositories requires a paid GitHub account.",
-                    "type": "boolean"
-                  },
-                  "has_issues": {
-                    "description": "True to enable issues for this repository, false to disable them. Default is true.",
-                    "type": "boolean"
-                  },
-                  "has_wiki": {
-                    "description": "True to enable the wiki for this repository, false to disable it. Default is true.",
-                    "type": "boolean"
-                  },
-                  "has_downloads": {
-                    "description": "True to enable downloads for this repository, false to disable them. Default is true.",
-                    "type": "boolean"
-                  },
-                  "team_id": {
-                    "description": "The id of the team that will be granted access to this repository. This is only valid when creating a repo in an organization.",
-                    "type": "integer"
-                  },
-                  "auto_init": {
-                    "description": "True to create an initial commit with empty README. Default is false.",
-                    "type": "boolean"
-                  },
-                  "gitignore_template": {
-                    "description": "Desired language or platform .gitignore template to apply. Use the name of the template without the extension. For example, \"Haskell\" Ignored if auto_init parameter is not provided. ",
-                    "type": "string"
-                  }
+                	"name": {
+                		"type": "string"
+                	},
+                	"description": {
+                		"type": "string"
+                	},
+                	"homepage": {
+                		"type": "string"
+                	},
+                	"private": {
+                		"description": "True to create a private repository, false to create a public one. Creating private repositories requires a paid GitHub account.",
+                		"type": "boolean"
+                	},
+                	"has_issues": {
+                		"description": "True to enable issues for this repository, false to disable them. Default is true.",
+                		"type": "boolean"
+                	},
+                	"has_wiki": {
+                		"description": "True to enable the wiki for this repository, false to disable it. Default is true.",
+                		"type": "boolean"
+                	},
+                	"has_downloads": {
+                		"description": "True to enable downloads for this repository, false to disable them. Default is true.",
+                		"type": "boolean"
+                	},
+                	"team_id": {
+                		"description": "The id of the team that will be granted access to this repository. This is only valid when creating a repo in an organization.",
+                		"type": "integer"
+                	},
+                	"auto_init": {
+                		"description": "True to create an initial commit with empty README. Default is false.",
+                		"type": "boolean"
+                	},
+                	"gitignore_template": {
+                		"description": "Desired language or platform .gitignore template to apply. Use the name of the template without the extension. For example, \"Haskell\" Ignored if auto_init parameter is not provided. ",
+                		"type": "string"
+                	}
                 },
                 "required": [ "name" ]
             }
@@ -4473,16 +4473,16 @@ traits:
               "$schema": "http://json-schema.org/draft-03/schema",
               "type": "object",
               "properties": {
-                "name": {
-                  "type": "string"
-                },
-                "permission": {
-                  "values": [
-                    "pull",
-                    "push",
-                    "admin"
-                  ]
-                }
+              	"name": {
+              		"type": "string"
+              	},
+              	"permission": {
+              		"values": [
+              			"pull",
+              			"push",
+              			"admin"
+              		]
+              	}
               },
               "required": [ "name" ]
           }
@@ -4542,26 +4542,26 @@ traits:
                   "$schema": "http://json-schema.org/draft-03/schema",
                   "type": "array",
                   "list": [
-                    {
-                      "properties": {
-                        "login": {
-                          "type": "string"
-                        },
-                        "id": {
-                          "type": "integer"
-                        },
-                        "avatar_url": {
-                          "type": "string"
-                        },
-                        "gravatar_id": {
-                          "type": "string"
-                        },
-                        "url": {
-                          "type": "string"
-                        }
-                      },
-                      "type": "object"
-                    }
+                  	{
+                  		"properties": {
+                  			"login": {
+                  				"type": "string"
+                  			},
+              			    "id": {
+              			    	"type": "integer"
+              			    },
+              			    "avatar_url": {
+              			    	"type": "string"
+              			    },
+              			    "gravatar_id": {
+              			    	"type": "string"
+              			    },
+              			    "url": {
+              			    	"type": "string"
+              			    }
+                  		},
+                  		"type": "object"
+                  	}
                   ]
               }
             example: |
@@ -4888,7 +4888,7 @@ traits:
                         "type": "object"
                     },
                     "parent": {
-                      "description": "Is present when the repo is a fork. Parent is the repo this repo was forked from.",
+                    	"description": "Is present when the repo is a fork. Parent is the repo this repo was forked from.",
                         "properties": {
                             "id": {
                                 "type": "integer"
@@ -4995,7 +4995,7 @@ traits:
                         "type": "object"
                     },
                     "source": {
-                      "description": "Is present when the repo is a fork. Source is the ultimate source for the network.",
+                    	"description": "Is present when the repo is a fork. Source is the ultimate source for the network.",
                         "properties": {
                             "id": {
                                 "type": "integer"
@@ -5238,35 +5238,35 @@ traits:
               "$schema": "http://json-schema.org/draft-03/schema",
               "type": "object",
               "properties": {
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
-                "homepage": {
-                  "type": "string"
-                },
-                "private": {
-                  "description": "True makes the repository private, and false makes it public.",
-                  "type": "boolean"
-                },
-                "has_issues": {
-                  "description": "True to enable issues for this repository, false to disable them. Default is true.",
-                  "type": "boolean"
-                },
-                "has_wiki": {
-                  "description": "True to enable the wiki for this repository, false to disable it. Default is true.",
-                  "type": "boolean"
-                },
-                "has_downloads": {
-                  "description": "True to enable downloads for this repository, false to disable them. Default is true.",
-                  "type": "boolean"
-                },
-                "default_branch": {
-                  "description": "Update the default branch for this repository.",
-                  "type": "string"
-                }
+              	"name": {
+              		"type": "string"
+              	},
+              	"description": {
+              		"type": "string"
+              	},
+              	"homepage": {
+              		"type": "string"
+              	},
+              	"private": {
+              		"description": "True makes the repository private, and false makes it public.",
+              		"type": "boolean"
+              	},
+              	"has_issues": {
+              		"description": "True to enable issues for this repository, false to disable them. Default is true.",
+              		"type": "boolean"
+              	},
+              	"has_wiki": {
+              		"description": "True to enable the wiki for this repository, false to disable it. Default is true.",
+              		"type": "boolean"
+              	},
+              	"has_downloads": {
+              		"description": "True to enable downloads for this repository, false to disable them. Default is true.",
+              		"type": "boolean"
+              	},
+              	"default_branch": {
+              		"description": "Update the default branch for this repository.",
+              		"type": "string"
+              	}
               },
               "required": [ "name" ]
           }
@@ -5403,7 +5403,7 @@ traits:
                         "type": "object"
                     },
                     "parent": {
-                      "description": "Is present when the repo is a fork. Parent is the repo this repo was forked from.",
+                    	"description": "Is present when the repo is a fork. Parent is the repo this repo was forked from.",
                         "properties": {
                             "id": {
                                 "type": "integer"
@@ -5510,7 +5510,7 @@ traits:
                         "type": "object"
                     },
                     "source": {
-                      "description": "Is present when the repo is a fork. Source is the ultimate source for the network.",
+                    	"description": "Is present when the repo is a fork. Source is the ultimate source for the network.",
                         "properties": {
                             "id": {
                                 "type": "integer"
@@ -5886,12 +5886,12 @@ traits:
                   "$schema": "http://json-schema.org/draft-03/schema",
                   "type": "object",
                   "properties": {
-                    "language": {
-                      "type": "string"
-                    },
-                    "count": {
-                      "type": "string"
-                    }
+                  	"language": {
+                  		"type": "string"
+                  	},
+                  	"count": {
+                  		"type": "string"
+                  	}
                   }
               }
             example: |
@@ -5937,9 +5937,9 @@ traits:
                     "$schema": "http://json-schema.org/draft-03/schema",
                     "type": "object",
                     "properties": {
-                      "sha": {
-                        "type": "string"
-                      }
+                    	"sha": {
+                    		"type": "string"
+                    	}
                     }
                 }
               example: |
@@ -6292,18 +6292,18 @@ traits:
                   "$schema": "http://json-schema.org/draft-03/schema",
                   "type": "object",
                   "properties": {
-                    "ref": {
-                      "description": "String of the name of the fully qualified reference (ie: refs/heads/master). If it doesn't start with ?refs' and have at least two slashes, it will be rejected.",
-                      "type": "string"
-                    },
-                    "sha": {
-                      "description": "String of the SHA1 value to set this reference to.",
-                      "type": "string"
-                    }
+                  	"ref": {
+                  		"description": "String of the name of the fully qualified reference (ie: refs/heads/master). If it doesn't start with ?refs' and have at least two slashes, it will be rejected.",
+                  		"type": "string"
+                  	},
+                  	"sha": {
+                  		"description": "String of the SHA1 value to set this reference to.",
+                  		"type": "string"
+                  	}
                   },
                   "required": [
-                    "ref",
-                    "sha"
+                  	"ref",
+                  	"sha"
                   ]
               }
         responses:
@@ -6458,18 +6458,18 @@ traits:
                       "$schema": "http://json-schema.org/draft-03/schema",
                       "type": "object",
                       "properties": {
-                        "sha": {
-                          "description": "String of the SHA1 value to set this reference to.",
-                          "type": "string"
-                        },
-                        "force": {
-                          "description": "Boolean indicating whether to force the update or to make sure the update is a fast-forward update. The default is false, so leaving this out or setting it to false will make sure you're not overwriting work.",
-                          "type": "boolean"
-                        }
+                      	"sha": {
+                      		"description": "String of the SHA1 value to set this reference to.",
+                      		"type": "string"
+                      	},
+                      	"force": {
+                      		"description": "Boolean indicating whether to force the update or to make sure the update is a fast-forward update. The default is false, so leaving this out or setting it to false will make sure you're not overwriting work.",
+                      		"type": "boolean"
+                      	}
                       },
                       "required": [
-                        "sha",
-                        "force"
+                      	"sha",
+                      	"force"
                       ]
                   }
             responses:
@@ -6582,21 +6582,21 @@ traits:
                     "$schema": "http://json-schema.org/draft-03/schema",
                     "type": "object",
                     "properties": {
-                      "tag": {
-                        "type": "string"
-                      },
-                      "message": {
-                        "description": "String of the tag message.",
-                        "type": "string"
-                      },
-                      "object": {
-                        "description": "String of the SHA of the git object this is tagging.",
-                        "type": "string"
-                      },
-                      "type": {
-                        "description": "String of the type of the object we're tagging. Normally this is a commit but it can also be a tree or a blob.",
-                        "type": "string"
-                      },
+                    	"tag": {
+                    		"type": "string"
+                    	},
+                    	"message": {
+                    		"description": "String of the tag message.",
+                    		"type": "string"
+                    	},
+                    	"object": {
+                    		"description": "String of the SHA of the git object this is tagging.",
+                    		"type": "string"
+                    	},
+                    	"type": {
+                    		"description": "String of the type of the object we're tagging. Normally this is a commit but it can also be a tree or a blob.",
+                    		"type": "string"
+                    	},
                         "tagger": {
                             "properties": {
                                 "name": {
@@ -6616,11 +6616,11 @@ traits:
                         }
                     },
                     "required": [
-                      "tag",
-                      "message",
-                      "object",
-                      "type",
-                      "tagger"
+                    	"tag",
+                    	"message",
+                    	"object",
+                    	"type",
+                    	"tagger"
                     ]
                 }
               example: |
@@ -7100,21 +7100,21 @@ traits:
                   "$schema": "http://json-schema.org/draft-03/schema",
                   "type": "object",
                   "properties": {
-                    "tag": {
-                      "type": "string"
-                    },
-                    "message": {
-                      "description": "String of the tag message.",
-                      "type": "string"
-                    },
-                    "object": {
-                      "description": "String of the SHA of the git object this is tagging.",
-                      "type": "string"
-                    },
-                    "type": {
-                      "description": "String of the type of the object we're tagging. Normally this is a commit but it can also be a tree or a blob.",
-                      "type": "string"
-                    },
+                  	"tag": {
+                  		"type": "string"
+                  	},
+                  	"message": {
+                  		"description": "String of the tag message.",
+                  		"type": "string"
+                  	},
+                  	"object": {
+                  		"description": "String of the SHA of the git object this is tagging.",
+                  		"type": "string"
+                  	},
+                  	"type": {
+                  		"description": "String of the type of the object we're tagging. Normally this is a commit but it can also be a tree or a blob.",
+                  		"type": "string"
+                  	},
                       "tagger": {
                           "properties": {
                               "name": {
@@ -7134,11 +7134,11 @@ traits:
                       }
                   },
                   "required": [
-                    "tag",
-                    "message",
-                    "object",
-                    "type",
-                    "tagger"
+                  	"tag",
+                  	"message",
+                  	"object",
+                  	"type",
+                  	"tagger"
                   ]
               }
             example: |
@@ -7171,20 +7171,20 @@ traits:
                   "$schema": "http://json-schema.org/draft-03/schema",
                   "type": "array",
                   "list": [
-                    {
-                      "properties": {
-                        "url": {
-                          "type": "string"
-                        },
-                        "name": {
-                          "type": "string"
-                        },
-                        "id": {
-                          "type": "integer"
-                        }
-                      },
-                      "type": "object"
-                    }
+                  	{
+                  		"properties": {
+                  			"url": {
+                  				"type": "string"
+                  			},
+              			    "name": {
+              			    	"type": "string"
+              			    },
+              			    "id": {
+              			    	"type": "integer"
+              			    }
+                  		},
+                  		"type": "object"
+                  	}
                   ]
               }
             example: |
@@ -7788,27 +7788,27 @@ traits:
                 "$schema": "http://json-schema.org/draft-03/schema",
                 "type": "object",
                 "properties": {
-                  "title": {
-                    "type": "string"
-                  },
-                  "body": {
-                    "type": "string"
-                  },
-                  "assignee": {
-                    "description": "Login for the user that this issue should be assigned to. NOTE: Only users with push access can set the assignee for new issues. The assignee is silently dropped otherwise.",
-                    "type": "string"
-                  },
-                  "milestone": {
-                    "description": "Milestone to associate this issue with. NOTE: Only users with push access can set the milestone for new issues. The milestone is silently dropped otherwise.",
-                    "type": "integer"
-                  },
-                  "labels": [
-                    {
-                      "description": "Array of strings - Labels to associate with this issue. NOTE: Only users with push access can set labels for new issues. Labels are silently dropped otherwise.",
-                      "type": "string"
-                    }
-                  ],
-                  "type": "array"
+                	"title": {
+                		"type": "string"
+                	},
+                	"body": {
+                		"type": "string"
+                	},
+                	"assignee": {
+                		"description": "Login for the user that this issue should be assigned to. NOTE: Only users with push access can set the assignee for new issues. The assignee is silently dropped otherwise.",
+                		"type": "string"
+                	},
+                	"milestone": {
+                		"description": "Milestone to associate this issue with. NOTE: Only users with push access can set the milestone for new issues. The milestone is silently dropped otherwise.",
+                		"type": "integer"
+                	},
+                	"labels": [
+                		{
+                			"description": "Array of strings - Labels to associate with this issue. NOTE: Only users with push access can set labels for new issues. Labels are silently dropped otherwise.",
+                			"type": "string"
+                		}
+                	],
+                	"type": "array"
                 },
                 "required": [ "title" ]
             }
@@ -9233,11 +9233,11 @@ traits:
                     "$schema": "http://json-schema.org/draft-03/schema",
                     "type": "object",
                     "properties": {
-                    "body": {
-                      "type": "string"
-                    }
-                  },
-                  "required": [ "body" ]
+                		"body": {
+                			"type": "string"
+                		}
+                	},
+                	"required": [ "body" ]
                 }
           responses:
             201:
@@ -9727,22 +9727,22 @@ traits:
                       "$schema": "http://json-schema.org/draft-03/schema",
                       "type": "array",
                       "list": [
-                        {
-                          "properties": {
-                            "url": {
-                              "type": "string"
-                            },
-                            "name": {
-                              "type": "string"
-                            },
-                            "color": {
-                              "type": "string",
-                              "maxLength": 6,
-                              "minLength": 6
-                            }
-                          },
-                          "type": "object"
-                        }
+                      	{
+                      		"properties": {
+                      			"url": {
+                      				"type": "string"
+                      			},
+                  			    "name": {
+                  			    	"type": "string"
+                  			    },
+                  			    "color": {
+                  			    	"type": "string",
+                  			    	"maxLength": 6,
+                  			    	"minLength": 6
+                  			    }
+                      		},
+                      		"type": "object"
+                      	}
                       ]
                   }
                 example: |
@@ -9762,15 +9762,15 @@ traits:
                     "$schema": "http://json-schema.org/draft-03/schema",
                     "type": "object",
                     "properties": {
-                      "name": {
-                        "type": "string"
-                      },
-                      "color": {
-                        "description": "6 character hex code, without a leading #.",
-                        "type": "string",
-                        "minLength": 6,
-                        "maxLength": 6
-                      }
+                    	"name": {
+                    		"type": "string"
+                    	},
+                    	"color": {
+                    		"description": "6 character hex code, without a leading #.",
+                    		"type": "string",
+                    		"minLength": 6,
+                    		"maxLength": 6
+                    	}
                     },
                     "required": [ "name", "color" ]
                 }
@@ -9812,15 +9812,15 @@ traits:
                     "$schema": "http://json-schema.org/draft-03/schema",
                     "type": "object",
                     "properties": {
-                      "name": {
-                        "type": "string"
-                      },
-                      "color": {
-                        "description": "6 character hex code, without a leading #.",
-                        "type": "string",
-                        "minLength": 6,
-                        "maxLength": 6
-                      }
+                    	"name": {
+                    		"type": "string"
+                    	},
+                    	"color": {
+                    		"description": "6 character hex code, without a leading #.",
+                    		"type": "string",
+                    		"minLength": 6,
+                    		"maxLength": 6
+                    	}
                     },
                     "required": [ "name", "color" ]
                 }
@@ -10085,11 +10085,11 @@ traits:
                     "$schema": "http://json-schema.org/draft-03/schema",
                     "type": "object",
                     "properties": {
-                    "body": {
-                      "type": "string"
-                    }
-                  },
-                  "required": [ "body" ]
+                		"body": {
+                			"type": "string"
+                		}
+                	},
+                	"required": [ "body" ]
                 }
           responses:
             200:
@@ -10188,95 +10188,95 @@ traits:
                   "$schema": "http://json-schema.org/draft-03/schema",
                   "type": "array",
                   "properties": [
-                    {
-                      "properties": {
-                        "id": {
-                          "type": "integer"
-                        },
-                        "repository": {
-                          "properties": {
-                            "id": {
-                              "type": "integer"
-                            },
-                            "owner": {
-                              "properties": {
-                                "login": {
-                                  "type": "string"
-                                },
-                                "id": {
-                                  "type": "integer"
-                                },
-                                "avatar_url": {
-                                  "type": "string"
-                                },
-                                "gravatar_id": {
-                                  "type": "string"
-                                },
-                                "url": {
-                                  "type": "string"
-                                }
-                              },
-                              "type": "object"
-                            },
-                            "name": {
-                              "type": "string"
-                            },
-                            "full_name": {
-                              "type": "string"
-                            },
-                            "description": {
-                              "type": "string"
-                            },
-                            "private": {
-                              "type": "boolean"
-                            },
-                            "fork": {
-                              "type": "boolean"
-                            },
-                            "url": {
-                              "type": "string"
-                            },
-                            "html_url": {
-                              "type": "string"
-                            }
-                          },
-                          "type": "object"
-                        },
-                        "subject": {
-                          "properties": {
-                            "title": {
-                              "type": "string"
-                            },
-                            "url": {
-                              "type": "string"
-                            },
-                            "latest_comment_url": {
-                              "type": "string"
-                            },
-                            "type": {
-                              "type": "string"
-                            }
-                          },
-                          "type": "object"
-                        },
-                        "reason": {
-                          "type": "string"
-                        },
-                        "unread": {
-                          "type": "boolean"
-                        },
-                        "updated_at": {
-                          "type": "string"
-                        },
-                        "last_read_at": {
-                          "type": "string"
-                        },
-                        "url": {
-                          "type": "string"
-                        }
-                      },
-                      "type": "object"
-                    }
+                  	{
+                  		"properties": {
+                  			"id": {
+                  				"type": "integer"
+                  			},
+                  			"repository": {
+                  				"properties": {
+                  					"id": {
+                  						"type": "integer"
+                  					},
+                  					"owner": {
+                  						"properties": {
+                  							"login": {
+                  								"type": "string"
+                  							},
+                  							"id": {
+                  								"type": "integer"
+                  							},
+                  							"avatar_url": {
+                  								"type": "string"
+                  							},
+                  							"gravatar_id": {
+                  								"type": "string"
+                  							},
+                  							"url": {
+                  								"type": "string"
+                  							}
+                  						},
+                  						"type": "object"
+                  					},
+                  					"name": {
+                  						"type": "string"
+                  					},
+                  					"full_name": {
+                  						"type": "string"
+                  					},
+                  					"description": {
+                  						"type": "string"
+                  					},
+                  					"private": {
+                  						"type": "boolean"
+                  					},
+                  					"fork": {
+                  						"type": "boolean"
+                  					},
+                  					"url": {
+                  						"type": "string"
+                  					},
+                  					"html_url": {
+                  						"type": "string"
+                  					}
+                  				},
+                  				"type": "object"
+                  			},
+                  			"subject": {
+                  				"properties": {
+                  					"title": {
+                  						"type": "string"
+                  					},
+                  					"url": {
+                  						"type": "string"
+                  					},
+                  					"latest_comment_url": {
+                  						"type": "string"
+                  					},
+                  					"type": {
+                  						"type": "string"
+                  					}
+                  				},
+                  				"type": "object"
+                  			},
+                  			"reason": {
+                  				"type": "string"
+                  			},
+                  			"unread": {
+                  				"type": "boolean"
+                  			},
+                  			"updated_at": {
+                  				"type": "string"
+                  			},
+                  			"last_read_at": {
+                  				"type": "string"
+                  			},
+                  			"url": {
+                  				"type": "string"
+                  			}
+                  		},
+                  		"type": "object"
+                  	}
                   ]
               }
             example: |
@@ -10321,10 +10321,10 @@ traits:
                 "$schema": "http://json-schema.org/draft-03/schema",
                 "type": "object",
                 "properties": {
-                  "last_read_at": {
-                    "description": "Describes the last point that notifications were checked. Anything updated since this time will not be updated. Default: Now.",
-                    "type": "string"
-                  }
+                	"last_read_at": {
+                		"description": "Describes the last point that notifications were checked. Anything updated since this time will not be updated. Default: Now.",
+                		"type": "string"
+                	}
                 }
             }
       description: |
@@ -10385,14 +10385,14 @@ traits:
                 "$schema": "http://json-schema.org/draft-03/schema",
                 "type": "object",
                 "properties": {
-                  "subscribed": {
-                    "description": "Determines if notifications should be received from this repository.",
-                    "type": "boolean"
-                  },
-                  "ignored": {
-                    "description": "Determines if all notifications should be blocked from this repository.",
-                    "type": "boolean"
-                  }
+                	"subscribed": {
+                		"description": "Determines if notifications should be received from this repository.",
+                		"type": "boolean"
+                	},
+                	"ignored": {
+                		"description": "Determines if all notifications should be blocked from this repository.",
+                		"type": "boolean"
+                	}
                 },
                 "required": [ "subscribed", "ignored" ]
             }
@@ -10451,26 +10451,26 @@ traits:
                   "$schema": "http://json-schema.org/draft-03/schema",
                   "type": "array",
                   "list": [
-                    {
-                      "properties": {
-                        "login": {
-                          "type": "string"
-                        },
-                        "id": {
-                          "type": "integer"
-                        },
-                        "avatar_url": {
-                          "type": "integer"
-                        },
-                        "gravatar_id": {
-                          "type": "string"
-                        },
-                        "url": {
-                          "type": "string"
-                        }
-                      },
-                      "type": "object"
-                    }
+                  	{
+                  		"properties": {
+                  			"login": {
+                  				"type": "string"
+                  			},
+              			    "id": {
+              			    	"type": "integer"
+              			    },
+              			    "avatar_url": {
+              			    	"type": "integer"
+              			    },
+              			    "gravatar_id": {
+              			    	"type": "string"
+              			    },
+              			    "url": {
+              			    	"type": "string"
+              			    }
+                  		},
+                  		"type": "object"
+                  	}
                   ]
               }
             example: |
@@ -10510,22 +10510,22 @@ traits:
                   "$schema": "http://json-schema.org/draft-03/schema",
                   "type": "array",
                   "list": [
-                    {
-                      "properties": {
-                        "url": {
-                          "type": "string"
-                        },
-                        "name": {
-                          "type": "string"
-                        },
-                        "color": {
-                          "type": "string",
-                          "maxLength": 6,
-                          "minLength": 6
-                        }
-                      },
-                      "type": "object"
-                    }
+                  	{
+                  		"properties": {
+                  			"url": {
+                  				"type": "string"
+                  			},
+              			    "name": {
+              			    	"type": "string"
+              			    },
+              			    "color": {
+              			    	"type": "string",
+              			    	"maxLength": 6,
+              			    	"minLength": 6
+              			    }
+                  		},
+                  		"type": "object"
+                  	}
                   ]
               }
             example: |
@@ -10545,15 +10545,15 @@ traits:
                 "$schema": "http://json-schema.org/draft-03/schema",
                 "type": "object",
                 "properties": {
-                  "name": {
-                    "type": "string"
-                  },
-                  "color": {
-                    "description": "6 character hex code, without a leading #.",
-                    "type": "string",
-                    "minLength": 6,
-                    "maxLength": 6
-                  }
+                	"name": {
+                		"type": "string"
+                	},
+                	"color": {
+                		"description": "6 character hex code, without a leading #.",
+                		"type": "string",
+                		"minLength": 6,
+                		"maxLength": 6
+                	}
                 },
                 "required": [ "name", "color" ]
             }
@@ -10628,15 +10628,15 @@ traits:
                   "$schema": "http://json-schema.org/draft-03/schema",
                   "type": "object",
                   "properties": {
-                    "name": {
-                      "type": "string"
-                    },
-                    "color": {
-                      "description": "6 character hex code, without a leading #.",
-                      "type": "string",
-                      "minLength": 6,
-                      "maxLength": 6
-                    }
+                  	"name": {
+                  		"type": "string"
+                  	},
+                  	"color": {
+                  		"description": "6 character hex code, without a leading #.",
+                  		"type": "string",
+                  		"minLength": 6,
+                  		"maxLength": 6
+                  	}
                   },
                   "required": [ "name", "color" ]
               }
@@ -10779,22 +10779,22 @@ traits:
                 "$schema": "http://json-schema.org/draft-03/schema",
                 "type": "object",
                 "properties": {
-                  "title": {
-                    "type": "string"
-                  },
-                  "state": {
-                    "enum": [
-                      "open",
-                      "closed"
-                    ]
-                  },
-                  "description": {
-                    "type": "string"
-                  },
-                  "due_on": {
-                    "description": "ISO 8601 time.",
-                    "type": "string"
-                  }
+                	"title": {
+                		"type": "string"
+                	},
+                	"state": {
+                		"enum": [
+                			"open",
+                			"closed"
+                		]
+                	},
+                	"description": {
+                		"type": "string"
+                	},
+                	"due_on": {
+                		"description": "ISO 8601 time.",
+                		"type": "string"
+                	}
                 },
                 "required": [ "title" ]
             }
@@ -10977,25 +10977,25 @@ traits:
                   "$schema": "http://json-schema.org/draft-03/schema",
                   "type": "object",
                   "properties": {
-                    "number": {
-                      "type": "integer"
-                    },
-                    "title": {
-                      "type": "string"
-                    },
-                    "state": {
-                      "enum": [
-                        "open",
-                        "closed"
-                      ]
-                    },
-                    "description": {
-                      "type": "string"
-                    },
-                    "due_on": {
-                      "description": "ISO 8601 time.",
-                      "type": "string"
-                    }
+                  	"number": {
+                  		"type": "integer"
+                  	},
+                  	"title": {
+                  		"type": "string"
+                  	},
+                  	"state": {
+                  		"enum": [
+                  			"open",
+                  			"closed"
+                  		]
+                  	},
+                  	"description": {
+                  		"type": "string"
+                  	},
+                  	"due_on": {
+                  		"description": "ISO 8601 time.",
+                  		"type": "string"
+                  	}
                   },
                   "required": [ "number" ]
               }
@@ -11094,22 +11094,22 @@ traits:
                       "$schema": "http://json-schema.org/draft-03/schema",
                       "type": "array",
                       "list": [
-                        {
-                          "properties": {
-                            "url": {
-                              "type": "string"
-                            },
-                            "name": {
-                              "type": "string"
-                            },
-                            "color": {
-                              "type": "string",
-                              "maxLength": 6,
-                              "minLength": 6
-                            }
-                          },
-                          "type": "object"
-                        }
+                      	{
+                      		"properties": {
+                      			"url": {
+                      				"type": "string"
+                      			},
+                  			    "name": {
+                  			    	"type": "string"
+                  			    },
+                  			    "color": {
+                  			    	"type": "string",
+                  			    	"maxLength": 6,
+                  			    	"minLength": 6
+                  			    }
+                      		},
+                      		"type": "object"
+                      	}
                       ]
                   }
                 example: |
@@ -12758,15 +12758,15 @@ traits:
                   "$schema": "http://json-schema.org/draft-03/schema",
                   "type": "object",
                   "properties": {
-                    "title": {
-                      "type": "string"
-                    },
-                    "body": {
-                      "type": "string"
-                    },
-                    "state": {
-                      "enum": [ "open", "closed" ]
-                    }
+                  	"title": {
+                  		"type": "string"
+                  	},
+                  	"body": {
+                  		"type": "string"
+                  	},
+                  	"state": {
+                  		"enum": [ "open", "closed" ]
+                  	}
                   }
               }
         responses:
@@ -12902,7 +12902,7 @@ traits:
                             "type": "object"
                         },
                         "parent": {
-                          "description": "Is present when the repo is a fork. Parent is the repo this repo was forked from.",
+                        	"description": "Is present when the repo is a fork. Parent is the repo this repo was forked from.",
                             "properties": {
                                 "id": {
                                     "type": "integer"
@@ -13009,7 +13009,7 @@ traits:
                             "type": "object"
                         },
                         "source": {
-                          "description": "Is present when the repo is a fork. Source is the ultimate source for the network.",
+                        	"description": "Is present when the repo is a fork. Source is the ultimate source for the network.",
                             "properties": {
                                 "id": {
                                     "type": "integer"
@@ -13966,7 +13966,7 @@ traits:
             404:
               description: Pull request has not been merged.
         put:
-          description: Merge a pull request (Merge Buttonâ„¢)
+          description: Merge a pull request (Merge Button™)
           body:
             application/json:
               schema: |
@@ -13974,10 +13974,10 @@ traits:
                     "$schema": "http://json-schema.org/draft-03/schema",
                     "type": "object",
                     "properties": {
-                      "commit_message": {
-                        "description": "The message that will be used for the merge commit",
-                        "type": "string"
-                      }
+                    	"commit_message": {
+                    		"description": "The message that will be used for the merge commit",
+                    		"type": "string"
+                    	}
                     }
                 }
           responses:
@@ -14171,21 +14171,21 @@ traits:
                     "$schema": "http://json-schema.org/draft-03/schema",
                     "type": "object",
                     "properties": {
-                      "body": {
-                        "type": "string"
-                      },
-                      "commit_id": {
-                        "description": "Sha of the commit to comment on.",
-                        "type": "string"
-                      },
-                      "path": {
-                        "description": "Relative path of the file to comment on.",
-                        "type": "string"
-                      },
-                      "position": {
-                        "description": "Line index in the diff to comment on.",
-                        "type": "string"
-                      }
+                    	"body": {
+                    		"type": "string"
+                    	},
+                    	"commit_id": {
+                    		"description": "Sha of the commit to comment on.",
+                    		"type": "string"
+                    	},
+                    	"path": {
+                    		"description": "Relative path of the file to comment on.",
+                    		"type": "string"
+                    	},
+                    	"position": {
+                    		"description": "Line index in the diff to comment on.",
+                    		"type": "string"
+                    	}
                     },
                     "required": [ "body", "commit_id", "path", "position" ]
                 }
@@ -14574,11 +14574,11 @@ traits:
                     "$schema": "http://json-schema.org/draft-03/schema",
                     "type": "object",
                     "properties": {
-                    "body": {
-                      "type": "string"
-                    }
-                  },
-                  "required": [ "body" ]
+                		"body": {
+                			"type": "string"
+                		}
+                	},
+                	"required": [ "body" ]
                 }
           responses:
             200:
@@ -14713,26 +14713,26 @@ traits:
                   "$schema": "http://json-schema.org/draft-03/schema",
                   "type": "array",
                   "list": [
-                    {
-                      "properties": {
-                        "login": {
-                          "type": "string"
-                        },
-                        "id": {
-                          "type": "integer"
-                        },
-                        "avatar_url": {
-                          "type": "string"
-                        },
-                        "gravatar_id": {
-                          "type": "string"
-                        },
-                        "url": {
-                          "type": "string"
-                        }
-                      },
-                      "type": "object"
-                    }
+                  	{
+                  		"properties": {
+                  			"login": {
+                  				"type": "string"
+                  			},
+              			    "id": {
+              			    	"type": "integer"
+              			    },
+              			    "avatar_url": {
+              			    	"type": "string"
+              			    },
+              			    "gravatar_id": {
+              			    	"type": "string"
+              			    },
+              			    "url": {
+              			    	"type": "string"
+              			    }
+                  		},
+                  		"type": "object"
+                  	}
                   ]
               }
             example: |
@@ -14962,11 +14962,11 @@ traits:
                   "$schema": "http://json-schema.org/draft-03/schema",
                   "type": "object",
                   "properties": {
-                  "body": {
-                    "type": "string"
-                  }
-                },
-                "required": [ "body" ]
+              		"body": {
+              			"type": "string"
+              		}
+              	},
+              	"required": [ "body" ]
               }
         responses:
           200:
@@ -15535,29 +15535,29 @@ traits:
                     "$schema": "http://json-schema.org/draft-03/schema",
                     "type": "object",
                     "properties": {
-                      "sha": {
-                        "description": "SHA of the commit to comment on.",
-                        "type": "string"
-                      },
-                      "body": {
-                        "type": "string"
-                      },
-                      "path": {
-                        "description": "Relative path of the file to comment on.",
-                        "type": "string"
-                      },
-                      "position": {
-                        "description": "Line index in the diff to comment on.",
-                        "type": "integer"
-                      },
-                      "line": {
-                        "description": "Deprecated - Use position parameter instead.",
-                        "type": "string"
-                      },
-                      "number": {
-                        "description": "Line number in the file to comment on. Defaults to null.",
-                        "type": "string"
-                      }
+                    	"sha": {
+                    		"description": "SHA of the commit to comment on.",
+                    		"type": "string"
+                    	},
+                    	"body": {
+                    		"type": "string"
+                    	},
+                    	"path": {
+                    		"description": "Relative path of the file to comment on.",
+                    		"type": "string"
+                    	},
+                    	"position": {
+                    		"description": "Line index in the diff to comment on.",
+                    		"type": "integer"
+                    	},
+                    	"line": {
+                    		"description": "Deprecated - Use position parameter instead.",
+                    		"type": "string"
+                    	},
+                    	"number": {
+                    		"description": "Line number in the file to comment on. Defaults to null.",
+                    		"type": "string"
+                    	}
                     },
                     "required": [ "sha", "body" ]
                 }
@@ -15871,54 +15871,54 @@ traits:
                   "$schema": "http://json-schema.org/draft-03/schema",
                   "type": "object",
                   "properties": {
-                    "path": {
-                      "description": "The content path.",
-                      "type": "string"
-                    },
-                    "message": {
-                      "description": "The commit message.",
-                      "type": "string"
-                    },
-                    "content": {
-                      "description": "The new file content, Base64 encoded.",
-                      "type": "string"
-                    },
+                  	"path": {
+                  		"description": "The content path.",
+                  		"type": "string"
+                  	},
+                  	"message": {
+                  		"description": "The commit message.",
+                  		"type": "string"
+                  	},
+                  	"content": {
+                  		"description": "The new file content, Base64 encoded.",
+                  		"type": "string"
+                  	},
                       "sha": {
                           "description": "Is included if we want to modify existing file. The blob SHA of the file being replaced.",
                           "type": "string"
                       },
-                    "branch": {
-                      "description": "The branch name. If not provided, uses the repository's default branch (usually master).",
-                      "type": "string"
-                    },
-                    "author": {
-                      "properties": {
-                        "name": {
-                          "description": "The name of the author of the commit.",
-                          "type": "string"
-                        },
-                        "email": {
-                          "description": "The email of the author of the commit",
-                          "type": "string"
-                        }
-                      },
-                      "type": "object"
-                    },
-                    "committer": {
-                      "properties": {
-                        "name": {
-                          "description": "The name of the committer of the commit.",
-                          "type": "string"
-                        },
-                        "email": {
-                          "description": "The email of the committer of the commit.",
-                          "type": "string"
-                        }
-                      },
-                      "type": "object"
-                    }
-                },
-                "required": [ "path", "message", "content", "branch" ]
+                  	"branch": {
+                  		"description": "The branch name. If not provided, uses the repository's default branch (usually master).",
+                  		"type": "string"
+                  	},
+                  	"author": {
+                  		"properties": {
+                  			"name": {
+                  				"description": "The name of the author of the commit.",
+                  				"type": "string"
+                  			},
+                  			"email": {
+                  				"description": "The email of the author of the commit",
+                  				"type": "string"
+                  			}
+                  		},
+                  		"type": "object"
+                  	},
+                  	"committer": {
+                  		"properties": {
+                  			"name": {
+                  				"description": "The name of the committer of the commit.",
+                  				"type": "string"
+                  			},
+                  			"email": {
+                  				"description": "The email of the committer of the commit.",
+                  				"type": "string"
+                  			}
+                  		},
+                  		"type": "object"
+                  	}
+              	},
+              	"required": [ "path", "message", "content", "branch" ]
               }
             example: |
               {
@@ -16225,21 +16225,21 @@ traits:
                 "$schema": "http://json-schema.org/draft-03/schema",
                 "type": "object",
                 "properties": {
-                  "name": {
-                    "type": "string"
-                  },
-                  "size": {
-                    "description": "Size of file in bytes.",
-                    "type": "integer"
-                  },
-                  "description": {
-                    "type": "string"
-                  },
-                  "content_type": {
-                    "type": "string"
-                  }
-              },
-              "required": [ "name", "size" ]
+                	"name": {
+                		"type": "string"
+                	},
+                	"size": {
+                		"description": "Size of file in bytes.",
+                		"type": "integer"
+                	},
+                	"description": {
+                		"type": "string"
+                	},
+                	"content_type": {
+                		"type": "string"
+                	}
+            	},
+            	"required": [ "name", "size" ]
             }
       responses:
         201:
@@ -16559,11 +16559,11 @@ traits:
                 "$schema": "http://json-schema.org/draft-03/schema",
                 "type": "object",
                 "properties": {
-                "organization": {
-                  "description": "Organization login. The repository will be forked into this organization.",
-                  "type": "string"
-                }
-              }
+            		"organization": {
+            			"description": "Organization login. The repository will be forked into this organization.",
+            			"type": "string"
+            		}
+            	}
             }
       responses:
         201:
@@ -16761,13 +16761,13 @@ traits:
                 "$schema": "http://json-schema.org/draft-03/schema",
                 "type": "object",
                 "properties": {
-                "title": {
-                  "type": "string"
-                },
-                "key": {
-                  "type": "string"
-                }
-              }
+            		"title": {
+            			"type": "string"
+            		},
+            		"key": {
+            			"type": "string"
+            		}
+            	}
             }
       responses:
         201:
@@ -16843,13 +16843,13 @@ traits:
                   "$schema": "http://json-schema.org/draft-03/schema",
                   "type": "object",
                   "properties": {
-                  "title": {
-                    "type": "string"
-                  },
-                  "key": {
-                    "type": "string"
-                  }
-                }
+              		"title": {
+              			"type": "string"
+              		},
+              		"key": {
+              			"type": "string"
+              		}
+              	}
               }
         responses:
           200:
@@ -16978,13 +16978,13 @@ traits:
                 "$schema": "http://json-schema.org/draft-03/schema",
                 "type": "object",
                 "properties": {
-                  "config": {
-                    "description": "A Hash containing key/value pairs to provide settings for this hook. Modifying this will replace the entire config object. These settings vary between the services and are defined in the github-services repo. Booleans are stored internally as \"1\" for true, and \"0\" for false. Any JSON true/false values will be converted automatically.",
-                    "type": "string"
-                  },
-                  "events": [
-                    {
-                      "enum": [
+                	"config": {
+                		"description": "A Hash containing key/value pairs to provide settings for this hook. Modifying this will replace the entire config object. These settings vary between the services and are defined in the github-services repo. Booleans are stored internally as \"1\" for true, and \"0\" for false. Any JSON true/false values will be converted automatically.",
+                		"type": "string"
+                	},
+                	"events": [
+                		{
+                			"enum": [
                                 "push",
                                 "issues",
                                 "issue_comment",
@@ -17001,13 +17001,13 @@ traits:
                                 "team_add",
                                 "status"
                             ]
-                    }
-                  ],
-                  "type": "array",
-                  "add_events": [
-                    {
-                      "description": "Determines a list of events to be added to the list of events that the Hook triggers for.",
-                      "enum": [
+                		}
+                	],
+                	"type": "array",
+                	"add_events": [
+                		{
+                			"description": "Determines a list of events to be added to the list of events that the Hook triggers for.",
+                			"enum": [
                                 "push",
                                 "issues",
                                 "issue_comment",
@@ -17024,13 +17024,13 @@ traits:
                                 "team_add",
                                 "status"
                             ]
-                    }
-                  ],
-                  "type": "array",
-                  "remove_events": [
-                    {
-                      "description": "Determines a list of events to be removed from the list of events that the Hook triggers for.",
-                      "enum": [
+                		}
+                	],
+                	"type": "array",
+                	"remove_events": [
+                		{
+                			"description": "Determines a list of events to be removed from the list of events that the Hook triggers for.",
+                			"enum": [
                                 "push",
                                 "issues",
                                 "issue_comment",
@@ -17047,14 +17047,14 @@ traits:
                                 "team_add",
                                 "status"
                             ]
-                    }
-                  ],
-                  "type": "array",
-                  "active": {
-                    "description": "Determines whether the hook is actually triggered on pushes.",
-                    "type": "boolean"
-                  }
-              }
+                		}
+                	],
+                	"type": "array",
+                	"active": {
+                		"description": "Determines whether the hook is actually triggered on pushes.",
+                		"type": "boolean"
+                	}
+            	}
             }
       responses:
         201:
@@ -17237,13 +17237,13 @@ traits:
                   "$schema": "http://json-schema.org/draft-03/schema",
                   "type": "object",
                   "properties": {
-                    "config": {
-                      "description": "A Hash containing key/value pairs to provide settings for this hook. Modifying this will replace the entire config object. These settings vary between the services and are defined in the github-services repo. Booleans are stored internally as \"1\" for true, and \"0\" for false. Any JSON true/false values will be converted automatically.",
-                      "type": "string"
-                    },
-                    "events": [
-                      {
-                        "enum": [
+                  	"config": {
+                  		"description": "A Hash containing key/value pairs to provide settings for this hook. Modifying this will replace the entire config object. These settings vary between the services and are defined in the github-services repo. Booleans are stored internally as \"1\" for true, and \"0\" for false. Any JSON true/false values will be converted automatically.",
+                  		"type": "string"
+                  	},
+                  	"events": [
+                  		{
+                  			"enum": [
                                   "push",
                                   "issues",
                                   "issue_comment",
@@ -17260,13 +17260,13 @@ traits:
                                   "team_add",
                                   "status"
                               ]
-                      }
-                    ],
-                    "type": "array",
-                    "add_events": [
-                      {
-                        "description": "Determines a list of events to be added to the list of events that the Hook triggers for.",
-                        "enum": [
+                  		}
+                  	],
+                  	"type": "array",
+                  	"add_events": [
+                  		{
+                  			"description": "Determines a list of events to be added to the list of events that the Hook triggers for.",
+                  			"enum": [
                                   "push",
                                   "issues",
                                   "issue_comment",
@@ -17283,13 +17283,13 @@ traits:
                                   "team_add",
                                   "status"
                               ]
-                      }
-                    ],
-                    "type": "array",
-                    "remove_events": [
-                      {
-                        "description": "Determines a list of events to be removed from the list of events that the Hook triggers for.",
-                        "enum": [
+                  		}
+                  	],
+                  	"type": "array",
+                  	"remove_events": [
+                  		{
+                  			"description": "Determines a list of events to be removed from the list of events that the Hook triggers for.",
+                  			"enum": [
                                   "push",
                                   "issues",
                                   "issue_comment",
@@ -17306,14 +17306,14 @@ traits:
                                   "team_add",
                                   "status"
                               ]
-                      }
-                    ],
-                    "type": "array",
-                    "active": {
-                      "description": "Determines whether the hook is actually triggered on pushes.",
-                      "type": "boolean"
-                    }
-                }
+                  		}
+                  	],
+                  	"type": "array",
+                  	"active": {
+                  		"description": "Determines whether the hook is actually triggered on pushes.",
+                  		"type": "boolean"
+                  	}
+              	}
               }
         responses:
           200:
@@ -17423,20 +17423,20 @@ traits:
                 "$schema": "http://json-schema.org/draft-03/schema",
                 "type": "object",
                 "properties": {
-                  "base": {
-                    "description": "The name of the base branch that the head will be merged into.",
-                    "type": "string"
-                  },
-                  "head": {
-                    "description": "The head to merge. This can be a branch name or a commit SHA1.",
-                    "type": "string"
-                  },
-                  "commit_message": {
-                    "description": "Commit message to use for the merge commit. If omitted, a default message will be used.",
-                    "type": "string"
-                  }
-              },
-              "required": [ "base", "head" ]
+                	"base": {
+                		"description": "The name of the base branch that the head will be merged into.",
+                		"type": "string"
+                	},
+                	"head": {
+                		"description": "The head to merge. This can be a branch name or a commit SHA1.",
+                		"type": "string"
+                	},
+                	"commit_message": {
+                		"description": "Commit message to use for the merge commit. If omitted, a default message will be used.",
+                		"type": "string"
+                	}
+            	},
+            	"required": [ "base", "head" ]
             }
       responses:
         201:
@@ -17649,11 +17649,11 @@ traits:
                     "$schema": "http://json-schema.org/draft-03/schema",
                     "type": "object",
                     "properties": {
-                    "message": {
-                      "description": "Error message",
-                      "type": "string"
-                    }
-                  }
+                		"message": {
+                			"description": "Error message",
+                			"type": "string"
+                		}
+                	}
                 }
               example: |
                 {
@@ -17668,11 +17668,11 @@ traits:
                     "$schema": "http://json-schema.org/draft-03/schema",
                     "type": "object",
                     "properties": {
-                    "message": {
-                      "description": "Error message",
-                      "type": "string"
-                    }
-                  }
+                		"message": {
+                			"description": "Error message",
+                			"type": "string"
+                		}
+                	}
                 }
               example: |
                 {
@@ -17773,20 +17773,20 @@ traits:
                 "$schema": "http://json-schema.org/draft-03/schema",
                 "type": "object",
                 "properties": {
-                  "state": {
-                    "enum": [
-                      "pending", "success", "error", "failure"
-                    ]
-                  },
-                  "target_url": {
-                    "description": "Target url to associate with this status. This URL will be linked from the GitHub UI to allow users to easily see the ?source' of the Status.",
-                    "type": "string"
-                  },
-                  "description": {
-                    "description": "Short description of the status",
-                    "type": "string"
-                  }
-              }
+                	"state": {
+                		"enum": [
+                			"pending", "success", "error", "failure"
+                		]
+                	},
+                	"target_url": {
+                		"description": "Target url to associate with this status. This URL will be linked from the GitHub UI to allow users to easily see the ?source' of the Status.",
+                		"type": "string"
+                	},
+                	"description": {
+                		"description": "Short description of the status",
+                		"type": "string"
+                	}
+            	}
             }
       responses:
         201:
@@ -18013,9 +18013,9 @@ traits:
                     "$schema": "http://json-schema.org/draft-03/schema",
                     "type": "array",
                     "list": [
-                      {
-                        "type": "integer"
-                      }
+                    	{
+                    		"type": "integer"
+                    	}
                     ]
                 }
               example: |
@@ -18038,19 +18038,19 @@ traits:
                     "$schema": "http://json-schema.org/draft-03/schema",
                     "type": "object",
                     "properties": {
-                    "all": [
-                      {
-                        "type": "integer"
-                      }
-                    ],
-                    "type": "array",
-                    "owner": [
-                      {
-                        "type": "integer"
-                      }
-                    ],
-                    "type": "array"
-                  }
+                		"all": [
+                			{
+                				"type": "integer"
+                			}
+                		],
+                		"type": "array",
+                		"owner": [
+                			{
+                				"type": "integer"
+                			}
+                		],
+                		"type": "array"
+                	}
                 }
               example: |
                 {
@@ -18357,28 +18357,28 @@ traits:
               "$schema": "http://json-schema.org/draft-03/schema",
               "type": "object",
               "properties": {
-                "name": {
-                  "type": "string"
-                },
-                "email": {
-                  "type": "string"
-                },
-                "blog": {
-                  "type": "string"
-                },
-                "company": {
-                  "type": "string"
-                },
-                "location": {
-                  "type": "string"
-                },
-                "hireable": {
-                  "type": "boolean"
-                },
-                "bio": {
-                  "type": "string"
-                }
-            }
+              	"name": {
+              		"type": "string"
+              	},
+              	"email": {
+              		"type": "string"
+              	},
+              	"blog": {
+              		"type": "string"
+              	},
+              	"company": {
+              		"type": "string"
+              	},
+              	"location": {
+              		"type": "string"
+              	},
+              	"hireable": {
+              		"type": "boolean"
+              	},
+              	"bio": {
+              		"type": "string"
+              	}
+          	}
           }
     responses:
       200:
@@ -20744,43 +20744,43 @@ traits:
                 "$schema": "http://json-schema.org/draft-03/schema",
                 "type": "object",
                 "properties": {
-                  "name": {
-                    "type": "string"
-                  },
-                  "description": {
-                    "type": "string"
-                  },
-                  "homepage": {
-                    "type": "string"
-                  },
-                  "private": {
-                    "description": "True to create a private repository, false to create a public one. Creating private repositories requires a paid GitHub account.",
-                    "type": "boolean"
-                  },
-                  "has_issues": {
-                    "description": "True to enable issues for this repository, false to disable them. Default is true.",
-                    "type": "boolean"
-                  },
-                  "has_wiki": {
-                    "description": "True to enable the wiki for this repository, false to disable it. Default is true.",
-                    "type": "boolean"
-                  },
-                  "has_downloads": {
-                    "description": "True to enable downloads for this repository, false to disable them. Default is true.",
-                    "type": "boolean"
-                  },
-                  "team_id": {
-                    "description": "The id of the team that will be granted access to this repository. This is only valid when creating a repo in an organization.",
-                    "type": "integer"
-                  },
-                  "auto_init": {
-                    "description": "True to create an initial commit with empty README. Default is false.",
-                    "type": "boolean"
-                  },
-                  "gitignore_template": {
-                    "description": "Desired language or platform .gitignore template to apply. Use the name of the template without the extension. For example, \"Haskell\" Ignored if auto_init parameter is not provided. ",
-                    "type": "string"
-                  }
+                	"name": {
+                		"type": "string"
+                	},
+                	"description": {
+                		"type": "string"
+                	},
+                	"homepage": {
+                		"type": "string"
+                	},
+                	"private": {
+                		"description": "True to create a private repository, false to create a public one. Creating private repositories requires a paid GitHub account.",
+                		"type": "boolean"
+                	},
+                	"has_issues": {
+                		"description": "True to enable issues for this repository, false to disable them. Default is true.",
+                		"type": "boolean"
+                	},
+                	"has_wiki": {
+                		"description": "True to enable the wiki for this repository, false to disable it. Default is true.",
+                		"type": "boolean"
+                	},
+                	"has_downloads": {
+                		"description": "True to enable downloads for this repository, false to disable them. Default is true.",
+                		"type": "boolean"
+                	},
+                	"team_id": {
+                		"description": "The id of the team that will be granted access to this repository. This is only valid when creating a repo in an organization.",
+                		"type": "integer"
+                	},
+                	"auto_init": {
+                		"description": "True to create an initial commit with empty README. Default is false.",
+                		"type": "boolean"
+                	},
+                	"gitignore_template": {
+                		"description": "Desired language or platform .gitignore template to apply. Use the name of the template without the extension. For example, \"Haskell\" Ignored if auto_init parameter is not provided. ",
+                		"type": "string"
+                	}
                 },
                 "required": [ "name" ]
             }
@@ -21430,9 +21430,9 @@ traits:
                 "$schema": "http://json-schema.org/draft-03/schema",
                 "type": "array",
                 "": [
-                  {
-                    "type": "string"
-                  }
+                	{
+                		"type": "string"
+                	}
                 ]
             }
           example: |
