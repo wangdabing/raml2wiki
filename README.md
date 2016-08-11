@@ -39,6 +39,5 @@ raml2wiki -s -i example.raml -o example.txt
 
 
 This script uses the parsing method and raml2obj script by Kevin Renskers 
-(https://github.com/kevinrenskers/raml2obj)
-(https://github.com/kevinrenskers/raml2md)
+(https://github.com/raml2html/raml2obj)
 
