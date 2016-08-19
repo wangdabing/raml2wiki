@@ -29,6 +29,8 @@ raml2wiki -s -i example.raml -o example.txt
 ```
 
 
+
+
 ## Example Output
 
 ### Start of Wiki Page
@@ -36,6 +38,12 @@ raml2wiki -s -i example.raml -o example.txt
 
 ### Example Endpoint Section
 ![Example Endpoint](https://raw.github.com/jhitchcock/raml2wiki/master/wikiExample2.png)
+
+
+
+You can add the -p flag in order to use an alternative template where resources are in collapsed panels, as per the below image; 
+
+![Alternative Template](https://raw.github.com/jhitchcock/raml2wiki/master/wikiExample2_alt.png)
 
 
 This script uses the parsing method and raml2obj script by Kevin Renskers 
