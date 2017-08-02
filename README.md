@@ -1,3 +1,8 @@
+# This is now conidered deprecated Please consider using https://www.npmjs.com/package/raml2html-confluencewiki-theme
+
+
+
+
 # RAML to WIKI
 
 A simple RAML to Wiki (Confluence / JIRA Markup) documentation generator, written for Node.js.
